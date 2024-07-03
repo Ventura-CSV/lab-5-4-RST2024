@@ -7,6 +7,13 @@ def minmax(numbers):
     Code Your Program here
     ########################################
     """
+    minval = numbers[0]
+    maxval = numbers[0]
+    for i in range (1, len(numbers)):
+        if minval > numbers[i]:
+            minval = numbers[i]
+        if maxval < numbers[i]:
+            maxval = numbers[i]
 
     ########################################
     # Do not delete the return statement
